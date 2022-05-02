@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #19a2ae;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: '';
+    background: url(bg-top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    mix-blend-mode: screen;
+    z-index: -99;
+}
+
+body::after {
+    content: '';
+    background: url(bg-bottom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+    bottom: -30%;
+    right: 0%;
+    left: 50%;
+    width: 50vw;
+    height: 100vh;
+    mix-blend-mode: screen;
+    z-index: -99;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    background: #fff;
+    -webkit-box-shadow: 1px 8px 18px 0px #646464;
+    box-shadow: 1px 8px 18px 0px #646464;
+    border-radius: 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.bg img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+}
+
+.profile-card img {
+    margin-top: -50px;
+    width: 30%;
+    height: auto;
+    background-size: contain;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.name {
+    padding: 20px;
+    color: #2d3248;
+    font-weight: 700;
+}
+
+.name h1:after {
+    content: '26';
+    font-weight: lighter;
+    margin-left: 10px;
+    color: #6a6f81
+}
+
+.name p {
+    padding: 15px 0;
+    color: #6a6f81
+}
+
+hr {
+    border-top: 1px solid #6a6f81;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.stat h1 {
+    font-size: 1.3rem;
+    color: #2d3248;
+}
+
+.stat p {
+    color: #6a6f81;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
